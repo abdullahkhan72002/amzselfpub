@@ -25,11 +25,11 @@ const servicePhotos: Record<string, { primary: string; consult: string; width: n
     alt: "Book marketing materials",
   },
   "amazon-publishing": {
-    primary: "/images/amazon-publishing-1.webp",
-    consult: "/images/amazon-publishing-2.webp",
+    primary: "/images/amazon-publishing-new-1.webp",
+    consult: "/images/amazon-publishing-new-2.webp",
     width: 1600,
-    height: 1066,
-    alt: "Books prepared for Amazon publishing",
+    height: 1067,
+    alt: "Cardboard boxes and a shopping cart on a laptop",
   },
   "audio-book-narration": {
     primary: "/images/audio-narration-1.webp",
