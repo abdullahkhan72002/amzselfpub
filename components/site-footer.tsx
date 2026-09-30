@@ -1,5 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CONTACT_EMAIL } from "@/components/hero-actions";
+
+const menu = [
+  { href: "/", label: "Home" },
+  { href: "/about-us", label: "About Us" },
+  { href: "/portfolio", label: "Portfolio" },
+  { href: "/services", label: "Services" },
+  { href: "/contact-us", label: "Contact Us" },
+];
 
 export function SiteFooter() {
   return (
@@ -18,7 +27,20 @@ export function SiteFooter() {
           </p>
         </div>
 
-        <div>
+        <nav aria-label="Footer" className="md:text-center">
+          <h2 className="font-sans text-sm font-bold text-teal">Menu</h2>
+          <ul className="mt-4 space-y-3 text-sm">
+            {menu.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} className="hover:text-teal">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="md:text-right">
           <h2 className="font-sans text-sm font-bold text-teal">Contact</h2>
           <address className="mt-4 space-y-3 text-sm not-italic leading-relaxed">
             <p>12508 Center St, South Gate, CA 90280, United States</p>
@@ -33,30 +55,6 @@ export function SiteFooter() {
               </a>
             </p>
           </address>
-        </div>
-
-        <div>
-          <h2 className="font-sans text-sm font-bold text-teal">Social Media</h2>
-          <ul className="mt-4 flex gap-3">
-            {[
-              { label: "Facebook", path: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" },
-              { label: "Instagram", path: "M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" },
-              { label: "LinkedIn", path: "M4 9h4v11H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm6 6h4v1.6c.6-1 2-2 4-2 3.3 0 4 2 4 5.1V20h-4v-5.2c0-1.2 0-2.8-1.8-2.8s-2.2 1.3-2.2 2.7V20h-4z" },
-              { label: "X", path: "M4 4l6.5 8.5L4 20h2.2l5.2-6 4.4 6H20l-7-9.2L19.5 4H17l-4.7 5.5L8.4 4z" },
-            ].map((item) => (
-              <li key={item.label}>
-                <a
-                  href="#contact"
-                  aria-label={item.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-white"
-                >
-                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor">
-                    <path d={item.path} />
-                  </svg>
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
 
