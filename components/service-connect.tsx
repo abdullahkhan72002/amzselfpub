@@ -4,7 +4,13 @@ import { FormEvent, useState } from "react";
 import Image from "next/image";
 import { submitLead } from "@/lib/submit-lead";
 
-export function ServiceConnect({ title = "Connect With Leading Book Publishers in USA Today" }: { title?: string }) {
+export function ServiceConnect({
+  title = "Connect With Leading Book Publishers in USA Today",
+  image = "/images/editing-desk.jpg",
+}: {
+  title?: string;
+  image?: string;
+}) {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
   const [pending, setPending] = useState(false);
@@ -30,7 +36,7 @@ export function ServiceConnect({ title = "Connect With Leading Book Publishers i
     <section className="relative overflow-hidden bg-teal text-white">
       <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 hidden w-[46%] lg:block">
         <Image
-          src="/images/editing-desk.jpg"
+          src={image}
           alt=""
           fill
           sizes="46vw"
@@ -89,7 +95,7 @@ export function ServiceConnect({ title = "Connect With Leading Book Publishers i
         <div className="hidden lg:block" />
       </div>
       <div aria-hidden="true" className="relative h-64 lg:hidden">
-        <Image src="/images/editing-desk.jpg" alt="" fill right-0 sizes="100vw" className="object-cover object-left" />
+        <Image src={image} alt="" fill sizes="100vw" className="object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-b from-teal from-0% via-teal/40 via-[22%] to-transparent" />
       </div>
     </section>

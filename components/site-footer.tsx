@@ -27,7 +27,7 @@ export function SiteFooter() {
           </p>
         </div>
 
-        <nav aria-label="Footer" className="md:text-center">
+        <nav aria-label="Footer">
           <h2 className="font-sans text-sm font-bold text-teal">Menu</h2>
           <ul className="mt-4 space-y-3 text-sm">
             {menu.map((item) => (
@@ -40,8 +40,8 @@ export function SiteFooter() {
           </ul>
         </nav>
 
-        <div className="md:text-right">
-          <h2 className="font-sans text-sm font-bold text-teal">Contact</h2>
+        <div>
+           <h2 className="font-sans text-sm font-bold text-teal">Contact</h2>
           <address className="mt-4 space-y-3 text-sm not-italic leading-relaxed">
             <p>12508 Center St, South Gate, CA 90280, United States</p>
             <p>

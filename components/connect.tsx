@@ -30,11 +30,11 @@ export function Connect() {
     <section className="bg-[linear-gradient(180deg,#ffffff_0%,#ffffff_78%,#e7f7f4_100%)]">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[280px_1fr] lg:py-24">
         <Image
-          src="/images/logo.png"
+          src="/images/connect-image.png"
           alt=""
           width={220}
           height={180}
-          className="mx-auto h-auto w-44 sm:w-56"
+          className="mx-auto h-auto w-44 sm:w-44"
         />
         <form onSubmit={onSubmit} className="min-w-0 border-t border-[#d7dde3] pt-8 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-10">
           <h2 className="max-w-xl font-heading text-4xl leading-tight text-navy sm:text-5xl">

@@ -9,6 +9,107 @@ import { getServiceFaqs } from "@/lib/service-faqs";
 import { getServiceStepNotes } from "@/lib/service-steps";
 import type { ServiceContent } from "@/lib/services";
 
+const servicePhotos: Record<string, { primary: string; consult: string; width: number; height: number; alt: string }> = {
+  "book-editing": {
+    primary: "/images/book-editing-1.webp",
+    consult: "/images/book-editing-2.webp",
+    width: 1600,
+    height: 1068,
+    alt: "Book editing workspace",
+  },
+  "book-marketing": {
+    primary: "/images/book-marketing-1.webp",
+    consult: "/images/book-marketing-2.webp",
+    width: 1600,
+    height: 1068,
+    alt: "Book marketing materials",
+  },
+  "amazon-publishing": {
+    primary: "/images/amazon-publishing-1.webp",
+    consult: "/images/amazon-publishing-2.webp",
+    width: 1600,
+    height: 1066,
+    alt: "Books prepared for Amazon publishing",
+  },
+  "audio-book-narration": {
+    primary: "/images/audio-narration-1.webp",
+    consult: "/images/audio-narration-2.webp",
+    width: 1600,
+    height: 2400,
+    alt: "Audiobook narration session",
+  },
+  "authors-website": {
+    primary: "/images/author-website-1.webp",
+    consult: "/images/author-website-2.webp",
+    width: 1600,
+    height: 1200,
+    alt: "Author website on a screen",
+  },
+  "book-cover-design": {
+    primary: "/images/book-cover-design-1.webp",
+    consult: "/images/book-cover-design-2.webp",
+    width: 1600,
+    height: 1067,
+    alt: "Red hardcover notebook with an elastic band",
+  },
+  "book-formatting": {
+    primary: "/images/book-formatting-1.webp",
+    consult: "/images/book-formatting-2.webp",
+    width: 1600,
+    height: 1067,
+    alt: "Laid-out book pages",
+  },
+  "book-printing": {
+    primary: "/images/book-printing-1.webp",
+    consult: "/images/book-printing-2.webp",
+    width: 1600,
+    height: 1067,
+    alt: "Close-up of the colored edges of printed book pages",
+  },
+  "children-book": {
+    primary: "/images/childrens-book-1.webp",
+    consult: "/images/childrens-book-2.webp",
+    width: 1600,
+    height: 1067,
+    alt: "Illustrated children's book",
+  },
+  "ebook-writing": {
+    primary: "/images/ebook-writing-1.webp",
+    consult: "/images/ebook-writing-2.webp",
+    width: 1600,
+    height: 1063,
+    alt: "Person reading a manuscript on a tablet",
+  },
+  "fiction-writing": {
+    primary: "/images/fiction-writing-1.webp",
+    consult: "/images/fiction-writing-2.webp",
+    width: 1600,
+    height: 900,
+    alt: "Open book on a wooden desk",
+  },
+  "ghost-writing": {
+    primary: "/images/ghostwriting-1.webp",
+    consult: "/images/ghostwriting-2.webp",
+    width: 1600,
+    height: 1068,
+    alt: "Writer drafting a manuscript",
+  },
+  "proof-reading": {
+    primary: "/images/proof-reading-1.webp",
+    consult: "/images/proof-reading-2.webp",
+    width: 1600,
+    height: 1067,
+    alt: "Hand holding a magnifying glass over printed text",
+  },
+  "video-trailer": {
+    primary: "/images/video-trailer-1.webp",
+    consult: "/images/video-trailer-2.webp",
+    width: 1600,
+    height: 900,
+    alt: "Editor reviewing video clips on a laptop",
+  },
+};
+
 const fadedCovers = [
   { src: "/images/book-16.png", className: "right-[18%] top-6 w-40 rotate-6 opacity-30" },
   { src: "/images/book-5.png", className: "right-[2%] top-16 w-44 -rotate-3 opacity-25" },
@@ -25,6 +126,7 @@ export function serviceMetadata(service: ServiceContent): Metadata {
 
 export function ServicePageView({ service }: { service: ServiceContent }) {
   const notes = getServiceStepNotes(service.slug);
+  const photo = servicePhotos[service.slug];
   const steps = service.steps.map((title, index) => ({
     title,
     body: notes[index] ?? "",
@@ -67,11 +169,12 @@ export function ServicePageView({ service }: { service: ServiceContent }) {
             <p className="mt-5 max-w-xl text-base leading-relaxed text-[#5c6570]">{service.journey}</p>
           </div>
           <Image
-            src="/images/journey-books.jpg"
-            alt="Person holding a stack of books"
-            width={900}
-            height={700}
-            className="h-auto w-full rounded-[2rem] object-cover"
+            src={photo?.primary ?? "/images/journey-books.jpg"}
+            alt={photo?.alt ?? "Person holding a stack of books"}
+            width={photo?.width ?? 900}
+            height={photo?.height ?? 700}
+            sizes="(min-width: 1024px) 40vw, 100vw"
+            className="aspect-[4/3] w-full rounded-[2rem] object-cover"
           />
         </div>
       </section>
@@ -107,7 +210,7 @@ export function ServicePageView({ service }: { service: ServiceContent }) {
         </div>
       </section>
 
-      <ServiceConnect title={`Start ${service.nav} with a free consultation`} />
+      <ServiceConnect title={`Start ${service.nav} with a free consultation`} image={photo?.consult} />
 
       <WhyChoose />
 
