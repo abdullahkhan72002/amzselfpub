@@ -142,8 +142,7 @@ export default function TermsPage() {
         <h2 className="font-heading text-2xl text-navy">Payment</h2>
         <p className="mt-3">
           Fees, milestones, and due dates are stated in your project agreement. Work on a stage
-          proceeds once the agreed payment for that stage is received. AMZ Self Pub, 12508 Center
-          St, South Gate, CA 90280, United States.
+          proceeds once the agreed payment for that stage is received.
         </p>
       </section>
     </LegalPage>

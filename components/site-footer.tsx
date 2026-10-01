@@ -47,7 +47,6 @@ export function SiteFooter() {
           <div>
             <h2 className="font-sans text-lg font-bold text-brand">Contact</h2>
             <address className="mt-3 space-y-3 font-sans text-[15px] leading-[22px] not-italic">
-              <p>12508 Center St, South Gate, CA 90280, United States</p>
               <p>
                 <a href={`tel:${phone}`} className="transition-colors hover:text-brand">
                   {phone}

@@ -106,8 +106,7 @@ export default function PrivacyPage() {
       <section>
         <h2 className="font-heading text-2xl text-navy">Contact</h2>
         <p className="mt-3">
-          Questions about this policy can be sent through the contact page. AMZ Self Pub, 12508
-          Center St, South Gate, CA 90280, United States. Phone{" "}
+          Questions about this policy can be sent through the contact page. Phone{" "}
           <a href="tel:4564812546664" className="text-teal">
             4564812546664
           </a>

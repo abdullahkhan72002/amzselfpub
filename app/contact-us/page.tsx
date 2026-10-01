@@ -21,10 +21,7 @@ export default function ContactUsPage() {
           <LeadForm id="hire" title="Hire A Book Publisher" align="left" />
           <address className="not-italic">
             <h2 className="font-sans text-sm font-bold text-teal">Contact</h2>
-            <p className="mt-4 leading-relaxed text-[#5c6570]">
-              12508 Center St, South Gate, CA 90280, United States
-            </p>
-            <p className="mt-3">
+            <p className="mt-4">
               <a href="tel:4564812546664" className="text-navy">
                 4564812546664
               </a>
