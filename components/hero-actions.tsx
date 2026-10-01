@@ -8,7 +8,7 @@ export function HeroActions({ align = "start" }: { align?: "start" | "center" })
     <div className={`mt-8 flex flex-wrap items-center gap-3 ${align === "center" ? "justify-center" : "justify-start"}`}>
       <Link
         href="/contact-us"
-        className="inline-flex rounded-xl bg-teal px-5 py-3 text-base font-medium text-white transition hover:bg-[#048f88]"
+        className="inline-flex rounded-xl bg-teal px-5 py-3 text-base font-medium text-white transition hover:bg-[#e58612]"
       >
         Get Free Consultation
       </Link>

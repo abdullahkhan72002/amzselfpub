@@ -19,7 +19,7 @@ export default function BlogPage() {
       <section className="bg-white">
         <ul className="mx-auto grid max-w-6xl gap-6 px-5 pb-20 sm:px-8 lg:grid-cols-2">
           {posts.map((post) => (
-            <li key={post.slug} className="bg-white p-6 shadow-[0_12px_30px_rgba(5,63,126,0.08)]">
+            <li key={post.slug} className="bg-white p-6 shadow-[0_12px_30px_rgba(0,0,0,0.08)]">
               <p className="text-sm text-teal">{post.date}</p>
               <h2 className="mt-2 font-heading text-2xl text-navy">{post.title}</h2>
               <p className="mt-3 text-sm leading-relaxed text-[#5c6570]">{post.excerpt}</p>

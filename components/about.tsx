@@ -7,7 +7,7 @@ export function About() {
     <section id="about" className="bg-white">
       <div className="h-16 bg-navy" />
       <div className="relative overflow-hidden">
-        <div className="pointer-events-none absolute top-10 -left-24 h-72 w-72 rounded-full bg-[#e7f6f3]" />
+        <div className="pointer-events-none absolute top-10 -left-24 h-72 w-72 rounded-full bg-[#fff4e6]" />
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:py-24">
           <div className="relative">
             <div className="flex items-center gap-3 text-sm text-navy">
@@ -27,7 +27,7 @@ export function About() {
               {steps.map((step, index) => (
                 <li
                   key={`${step}-${index}`}
-                  className="flex min-w-0 items-center gap-3 rounded-full bg-white px-3 py-2 text-sm font-medium text-navy shadow-[0_8px_24px_rgba(5,63,126,0.08)]"
+                  className="flex min-w-0 items-center gap-3 rounded-full bg-white px-3 py-2 text-sm font-medium text-navy shadow-[0_8px_24px_rgba(0,0,0,0.08)]"
                 >
                   <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-teal to-navy text-white">
                     <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none">

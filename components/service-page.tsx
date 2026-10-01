@@ -134,7 +134,7 @@ export function ServicePageView({ service }: { service: ServiceContent }) {
 
   return (
     <main className="overflow-x-clip">
-      <section className="relative overflow-hidden bg-[linear-gradient(180deg,#ffffff_0%,#f3fbfa_100%)]">
+      <section className="relative overflow-hidden bg-[linear-gradient(180deg,#ffffff_0%,#fff8f0_100%)]">
         <div className="pointer-events-none absolute inset-y-0 right-0 w-[48%]">
           {fadedCovers.map((book) => (
             <Image
@@ -160,7 +160,7 @@ export function ServicePageView({ service }: { service: ServiceContent }) {
         </div>
       </section>
 
-      <section className="bg-[linear-gradient(90deg,#e7eef6_0%,#f7f9fb_46%,#ffffff_100%)]">
+      <section className="bg-[linear-gradient(90deg,#fff1e0_0%,#f7f9fb_46%,#ffffff_100%)]">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:py-20">
           <div>
             <h2 className="max-w-md font-heading text-4xl leading-tight text-navy sm:text-5xl">
@@ -188,7 +188,7 @@ export function ServicePageView({ service }: { service: ServiceContent }) {
             {service.includes.map((item) => (
               <li
                 key={item}
-                className="flex min-w-0 items-center gap-3 rounded-3xl bg-white px-3 py-2.5 text-sm font-medium text-navy shadow-[0_10px_28px_rgba(5,63,126,0.1)]"
+                className="flex min-w-0 items-center gap-3 rounded-3xl bg-white px-3 py-2.5 text-sm font-medium text-navy shadow-[0_10px_28px_rgba(0,0,0,0.08)]"
               >
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-teal to-navy text-white">
                   <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none">

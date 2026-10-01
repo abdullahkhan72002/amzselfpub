@@ -33,7 +33,7 @@ export function ServiceConnect({
   }
 
   return (
-    <section className="relative overflow-hidden bg-teal text-white">
+    <section className="relative overflow-hidden bg-black text-white">
       <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 hidden w-[46%] lg:block">
         <Image
           src={image}
@@ -42,7 +42,7 @@ export function ServiceConnect({
           sizes="46vw"
           className="object-cover object-right"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-teal from-0% via-teal via-[32%] to-transparent to-[72%]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black from-0% via-black via-[32%] to-transparent to-[72%]" />
       </div>
       <div className="relative mx-auto grid max-w-6xl px-5 py-14 sm:px-8 lg:grid-cols-[minmax(0,1fr)_40%] lg:py-16">
         <form onSubmit={onSubmit} className="lg:pr-12">
@@ -73,7 +73,7 @@ export function ServiceConnect({
             <button
               type="submit"
               disabled={pending}
-              className="inline-flex h-12 shrink-0 items-center gap-3 rounded-lg bg-navy px-5 text-sm font-medium text-white disabled:opacity-70"
+              className="inline-flex h-12 shrink-0 items-center gap-3 rounded-lg bg-brand px-5 text-sm font-medium text-white transition hover:bg-[#e58612] disabled:opacity-70"
             >
               {pending ? "Sending..." : "Subscribe"}
               <span className="flex h-6 w-6 items-center justify-center rounded-full border border-white/70 text-xs">
@@ -96,7 +96,7 @@ export function ServiceConnect({
       </div>
       <div aria-hidden="true" className="relative h-64 lg:hidden">
         <Image src={image} alt="" fill sizes="100vw" className="object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-b from-teal from-0% via-teal/40 via-[22%] to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black from-0% via-black/40 via-[22%] to-transparent" />
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Arima, Poppins } from "next/font/google";
+import { Arima, Inter, Plus_Jakarta_Sans, Poppins, Tinos } from "next/font/google";
 import { PpcCapture } from "@/components/ppc-capture";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -18,6 +18,26 @@ const poppins = Poppins({
   display: "swap",
 });
 
+const tinos = Tinos({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--ff-tinos",
+  display: "swap",
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["300", "600"],
+  variable: "--ff-jakarta",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--ff-inter",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Best Book Publishers for Self-Publishing Success",
   description:
@@ -26,7 +46,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${arima.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${arima.variable} ${poppins.variable} ${tinos.variable} ${jakarta.variable} ${inter.variable}`}>
       <body className="min-h-full max-w-full overflow-x-clip bg-white antialiased">
         <PpcCapture />
         <SiteHeader />

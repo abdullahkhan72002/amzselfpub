@@ -36,28 +36,22 @@ export function SiteHeader() {
       className="sticky top-0 z-40 border-b border-black/5 bg-white/95 backdrop-blur"
       onMouseLeave={() => setServicesOpen(false)}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
-        <Link href="/" className="shrink-0" onClick={closeAll}>
-          <Image
-            src="/images/logo.png"
-            alt="AMZ Self Pub"
-            width={108}
-            height={87}
-            className="h-12 w-auto"
-            priority
-          />
+      <div className="mx-auto flex w-full max-w-[1140px] items-center justify-between gap-4 px-5 py-3">
+        <Link href="/" className="flex shrink-0 flex-col items-center gap-1.5" onClick={closeAll} aria-label="AMZ Self Pub home">
+          <Image src="/images/home/imgGroup.svg" alt="" width={131} height={80} className="h-11 w-auto" unoptimized priority />
+          <Image src="/images/home/imgGroup2.svg" alt="AMZ Self Pub" width={172} height={32} className="h-[17px] w-auto" unoptimized priority />
         </Link>
 
-        <nav className="hidden items-center gap-3 text-sm font-medium tracking-wide text-[#111] lg:flex">
+        <nav className="hidden items-center gap-4 font-inter text-[13px] font-medium tracking-[1.6px] text-black lg:flex xl:text-sm">
           {links.map((link, index) => {
             const active = isActive(pathname, link.href, link.mega);
             return (
-              <span key={link.href} className="flex items-center gap-3">
+              <span key={link.href} className="flex items-center gap-4">
                 {index > 0 ? <span className="text-[#d1d1d1]">|</span> : null}
                 {link.mega ? (
                   <Link
                     href={link.href}
-                    className={active ? "font-extrabold text-teal" : "hover:text-teal"}
+                    className={active ? "font-extrabold text-brand" : "transition hover:text-brand"}
                     aria-expanded={servicesOpen}
                     onMouseEnter={() => setServicesOpen(true)}
                     onFocus={() => setServicesOpen(true)}
@@ -65,7 +59,7 @@ export function SiteHeader() {
                     {link.label.toUpperCase()}
                   </Link>
                 ) : (
-                  <Link href={link.href} className={active ? "font-extrabold text-teal" : "hover:text-teal"}>
+                  <Link href={link.href} className={active ? "font-extrabold text-brand" : "transition hover:text-brand"}>
                     {link.label.toUpperCase()}
                   </Link>
                 )}
@@ -76,7 +70,7 @@ export function SiteHeader() {
 
         <Link
           href="/contact-us"
-          className="hidden rounded-xl bg-teal px-5 py-3 text-base font-medium text-white transition hover:bg-[#048f88] lg:inline-flex"
+          className="hidden h-11 min-w-[150px] items-center justify-center rounded-[10px] bg-brand px-6 text-base font-medium text-white transition hover:bg-[#e8851a] lg:inline-flex"
         >
           Get Started
         </Link>
@@ -97,8 +91,8 @@ export function SiteHeader() {
       </div>
 
       {servicesOpen ? (
-        <div className="absolute inset-x-0 top-full hidden border-t border-black/5 bg-white shadow-[0_18px_40px_rgba(5,63,126,0.12)] lg:block">
-          <div className="mx-auto max-w-6xl px-8 py-6">
+        <div className="absolute inset-x-0 top-full hidden border-t border-black/5 bg-white shadow-[0_18px_40px_rgba(0,0,0,0.1)] lg:block">
+          <div className="mx-auto max-w-[1140px] px-5 py-6">
             <div className="grid grid-cols-2 gap-2 xl:grid-cols-4">
               {services.map((service) => {
                 const href = `/${service.slug}`;
@@ -107,10 +101,10 @@ export function SiteHeader() {
                   <Link
                     key={service.slug}
                     href={href}
-                    className={`rounded-xl px-4 py-3 ${active ? "bg-[#e7f7f4]" : "hover:bg-[#f3fbfa]"}`}
+                    className={`rounded-xl px-4 py-3 ${active ? "bg-[#fff4e8]" : "hover:bg-[#fff8f0]"}`}
                     onClick={() => setServicesOpen(false)}
                   >
-                    <span className={`block text-sm font-semibold ${active ? "text-teal" : "text-navy"}`}>
+                    <span className={`block text-sm font-semibold ${active ? "text-brand" : "text-black"}`}>
                       {service.nav}
                     </span>
                     <span className="mt-1 line-clamp-2 block text-xs leading-relaxed text-[#5c6570]">
@@ -122,7 +116,7 @@ export function SiteHeader() {
             </div>
             <Link
               href="/services"
-              className="mt-4 inline-flex text-sm font-semibold text-teal"
+              className="mt-4 inline-flex text-sm font-semibold text-brand"
               onClick={() => setServicesOpen(false)}
             >
               View all services
@@ -142,7 +136,7 @@ export function SiteHeader() {
                     <>
                       <button
                         type="button"
-                        className={`flex w-full items-center justify-between ${active ? "font-extrabold text-teal" : "text-[#111]"}`}
+                        className={`flex w-full items-center justify-between ${active ? "font-extrabold text-brand" : "text-black"}`}
                         aria-expanded={servicesOpen}
                         onClick={() => setServicesOpen((value) => !value)}
                       >
@@ -157,8 +151,8 @@ export function SiteHeader() {
                               <li key={service.slug}>
                                 <Link
                                   href={href}
-                                  className={`block rounded-lg bg-[#f6fbf9] px-3 py-2 normal-case tracking-normal ${
-                                    pathname === href ? "font-semibold text-teal" : "text-[#111]"
+                                  className={`block rounded-lg bg-[#fff8f0] px-3 py-2 normal-case tracking-normal ${
+                                    pathname === href ? "font-semibold text-brand" : "text-[#111]"
                                   }`}
                                   onClick={closeAll}
                                 >
@@ -173,7 +167,7 @@ export function SiteHeader() {
                   ) : (
                     <Link
                       href={link.href}
-                      className={active ? "font-extrabold text-teal" : "text-[#111]"}
+                      className={active ? "font-extrabold text-brand" : "text-black"}
                       onClick={closeAll}
                     >
                       {link.label.toUpperCase()}
@@ -185,7 +179,7 @@ export function SiteHeader() {
           </ul>
           <Link
             href="/contact-us"
-            className="mt-4 inline-flex rounded-xl bg-teal px-5 py-3 text-base font-medium text-white"
+            className="mt-4 inline-flex rounded-[10px] bg-brand px-6 py-3 text-base font-medium text-white"
             onClick={closeAll}
           >
             Get Started

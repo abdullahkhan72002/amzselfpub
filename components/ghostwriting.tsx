@@ -27,7 +27,7 @@ const features = [
 
 export function Ghostwriting() {
   return (
-    <section className="bg-[linear-gradient(180deg,#e7f7f4_0%,#ffffff_48%,#ffffff_100%)]">
+    <section className="bg-[linear-gradient(180deg,#fff4e6_0%,#ffffff_48%,#ffffff_100%)]">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 lg:py-24">
         <h2 className="mx-auto max-w-4xl text-center font-heading text-4xl leading-tight text-navy sm:text-5xl">
           Looking for Professional <span className="text-teal">Ghostwriting</span> Services? Here’s What You Can Expect

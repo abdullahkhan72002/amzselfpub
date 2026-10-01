@@ -46,7 +46,7 @@ export async function POST(request: Request) {
     attachments: [
       {
         filename: "logo.png",
-        path: join(process.cwd(), "public/images/logo.png"),
+        path: join(process.cwd(), "app/icon.png"),
         cid: "logo",
       },
     ],

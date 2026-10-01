@@ -25,7 +25,7 @@ const points = [
 
 export function WhyChoose() {
   return (
-    <section className="bg-[linear-gradient(90deg,#e7f7f4_0%,#ffffff_42%)]">
+    <section className="bg-[linear-gradient(90deg,#fff4e6_0%,#ffffff_42%)]">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:py-24">
         <div>
           <h2 className="font-heading text-4xl text-navy sm:text-5xl">Why Choose Us</h2>
@@ -53,7 +53,7 @@ export function WhyChoose() {
         <ul className="grid gap-8 sm:grid-cols-2">
           {points.map((point) => (
             <li key={point.number}>
-              <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-white font-heading text-xl text-teal shadow-[0_10px_24px_rgba(5,63,126,0.08)]">
+              <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-white font-heading text-xl text-teal shadow-[0_10px_24px_rgba(0,0,0,0.08)]">
                 {point.number}
               </span>
               <h3 className="mt-5 font-sans text-2xl font-semibold text-ink">{point.title}</h3>

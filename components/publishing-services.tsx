@@ -11,7 +11,7 @@ const categories = [
 
 export function Services() {
   return (
-    <section id="services" className="overflow-x-clip bg-[linear-gradient(180deg,#e7f7f4_0%,#ffffff_62%)]">
+    <section id="services" className="overflow-x-clip bg-[linear-gradient(180deg,#fff4e6_0%,#ffffff_62%)]">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 lg:py-24">
         <div className="flex items-center justify-center gap-3 text-sm text-navy">
           <span className="h-0.5 w-8 bg-teal" />

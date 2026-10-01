@@ -51,7 +51,7 @@ const reviews = [
 
 function Card({ review }: { review: (typeof reviews)[number] }) {
   return (
-    <article className="w-[min(20rem,78vw)] shrink-0 rounded-2xl bg-white p-6 shadow-[0_16px_40px_rgba(5,63,126,0.08)] sm:w-[26rem]">
+    <article className="w-[min(20rem,78vw)] shrink-0 rounded-2xl bg-white p-6 shadow-[0_16px_40px_rgba(0,0,0,0.08)] sm:w-[26rem]">
       <div className="flex items-start justify-between gap-4">
         <div className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -27,7 +27,7 @@ export function Connect() {
   }
 
   return (
-    <section className="bg-[linear-gradient(180deg,#ffffff_0%,#ffffff_78%,#e7f7f4_100%)]">
+    <section className="bg-[linear-gradient(180deg,#ffffff_0%,#ffffff_78%,#fff4e6_100%)]">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[280px_1fr] lg:py-24">
         <Image
           src="/images/connect-image.png"

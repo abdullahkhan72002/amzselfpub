@@ -32,7 +32,7 @@ export function Hero() {
         ))}
       </div>
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1fr_1fr] lg:py-20">
         <div>
           <h1 className="max-w-xl font-heading text-4xl leading-[1.05] tracking-tight text-navy sm:text-5xl lg:text-6xl">
             <span className="text-teal">Best</span> Book Publishers for Self-Publishing Success

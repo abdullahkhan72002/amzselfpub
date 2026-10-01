@@ -110,7 +110,7 @@ export function LeadForm({
       <button
         type="submit"
         disabled={pending}
-        className={`mt-6 flex h-12 min-w-36 items-center justify-center rounded-lg bg-teal px-8 text-base font-medium text-white transition hover:bg-[#048f88] disabled:opacity-70 ${align === "center" ? "mx-auto" : ""}`}
+        className={`mt-6 flex h-12 min-w-36 items-center justify-center rounded-lg bg-teal px-8 text-base font-medium text-white transition hover:bg-[#e58612] disabled:opacity-70 ${align === "center" ? "mx-auto" : ""}`}
       >
         {pending ? "Sending..." : submitLabel}
       </button>

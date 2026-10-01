@@ -29,7 +29,7 @@ export function HowItWorks({
   return (
     <section className="relative overflow-hidden bg-navy text-white">
       <Image src="/images/how-bg.png" alt="" fill sizes="100vw" className="object-cover" />
-      <div className="absolute inset-0 bg-[#0c4e92]/78" />
+      <div className="absolute inset-0 bg-[#111111]/78" />
       <div className="relative mx-auto max-w-6xl px-5 py-16 sm:px-8 lg:py-24">
         <h2 className="text-center font-heading text-4xl sm:text-5xl">{title}</h2>
         <p className="mx-auto mt-5 max-w-3xl text-center text-base leading-relaxed text-white/90 sm:text-lg">

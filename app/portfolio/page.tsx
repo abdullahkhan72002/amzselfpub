@@ -34,7 +34,7 @@ export default function PortfolioPage() {
           {books.map((book) => (
             <li
               key={book.src}
-              className="mb-6 inline-block w-full break-inside-avoid bg-white p-4 shadow-[0_12px_30px_rgba(5,63,126,0.08)]"
+              className="mb-6 inline-block w-full break-inside-avoid bg-white p-4 shadow-[0_12px_30px_rgba(0,0,0,0.08)]"
             >
               <Image
                 src={book.src}

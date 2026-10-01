@@ -3,12 +3,16 @@
 @theme inline {
   --font-sans: var(--font-poppins);
   --font-heading: var(--font-arima);
-  --color-teal: #05a59d;
-  --color-navy: #053f7e;
+  --font-tinos: var(--ff-tinos);
+  --font-jakarta: var(--ff-jakarta);
+  --font-inter: var(--ff-inter);
+  --color-brand: #fe951f;
+  --color-teal: #fe951f;
+  --color-navy: #161616;
   --color-ink: #212b27;
   --color-muted: #435058;
   --color-soft: #6c6c6c;
-  --color-form: #f6fbf9;
+  --color-form: #fff6ec;
   --color-card: #f1f2ee;
   --color-line: #eae8df;
   --color-placeholder: #a0a0a0;

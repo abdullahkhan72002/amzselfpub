@@ -5,7 +5,7 @@ export function Coupon() {
   return (
     <section id="contact" className="relative overflow-hidden bg-navy">
       <Image src="/images/how-bg.png" alt="" fill sizes="100vw" className="object-cover" />
-      <div className="absolute inset-0 bg-[#0b4f96]/80" />
+      <div className="absolute inset-0 bg-[#111111]/80" />
       <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:py-24">
         <LeadForm
           id="coupon"
