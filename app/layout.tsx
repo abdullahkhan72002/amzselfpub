@@ -47,6 +47,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${arima.variable} ${poppins.variable} ${tinos.variable} ${jakarta.variable} ${inter.variable}`}>
+      <head>
+        {/* Start of brandwebsite-f Zendesk Widget script */}
+        <script
+          id="ze-snippet"
+          src="https://static.zdassets.com/ekr/snippet.js?key=0b5af1dd-8595-46bb-99da-eb913ca386ce"
+        />
+        {/* End of brandwebsite-f Zendesk Widget script */}
+      </head>
       <body className="min-h-full max-w-full overflow-x-clip bg-white antialiased">
         <PpcCapture />
         <SiteHeader />
