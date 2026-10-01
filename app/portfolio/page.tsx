@@ -9,6 +9,12 @@ export const metadata: Metadata = {
 };
 
 const books = [
+  { src: "/images/home/Bullfrog C3 R1.jpg", title: "Bullfrog", width: 1800, height: 2700 },
+  { src: "/images/home/Cover 02 R2.jpg", title: "The first Adventure of PO Bear", width: 1800, height: 2700 },
+  { src: "/images/home/Cover Design Kingdom Living.jpg", title: "Rebuilding for Kingdom Living", width: 2550, height: 3300 },
+  { src: "/images/home/Cover.jpg", title: "Ring the Bells That Still Can Ring", width: 1800, height: 2700 },
+  { src: "/images/home/Cover02.jpg", title: "PooPoo Fairy", width: 2550, height: 3300 },
+  { src: "/images/home/IN THE STREETS OF 02.jpg", title: "In the Streets of the Alleyways", width: 2400, height: 3300 },
   { src: "/images/carousel/book-5.png", title: "Simple Way Of Piece Life", width: 900, height: 1306 },
   { src: "/images/carousel/book-3.png", title: "Great Travel At Desert", width: 900, height: 720 },
   { src: "/images/carousel/book-16.png", title: "The Lady Beauty Scarlett", width: 900, height: 1306 },

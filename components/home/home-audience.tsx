@@ -5,19 +5,19 @@ import Link from "next/link";
 import { useState } from "react";
 
 const books = [
+  { src: "/images/carousel/book-4.png", alt: "Once Upon A Time" },
+  { src: "/images/home/Bullfrog C3 R1.jpg", alt: "Bullfrog" },
+  { src: "/images/home/Cover 02 R2.jpg", alt: "The first Adventure of PO Bear" },
+  { src: "/images/home/Cover Design Kingdom Living.jpg", alt: "Rebuilding for Kingdom Living" },
   { src: "/images/carousel-1.png", alt: "The Little Star's Big Journey" },
   { src: "/images/carousel-2.png", alt: "The Universe Within" },
   { src: "/images/carousel-3.png", alt: "Ignite Your Growth" },
   { src: "/images/carousel-4.png", alt: "The Coven" },
   { src: "/images/carousel/book-5.png", alt: "Simple Way Of Piece Life" },
   { src: "/images/carousel/book-16.png", alt: "The Lady Beauty Scarlett" },
-  { src: "/images/carousel/book-4.png", alt: "Once Upon A Time" },
-  { src: "/images/home/Bullfrog C3 R1.jpg", alt: "Bullfrog" },
-  { src: "/images/home/Cover 02 R2.jpg", alt: "Cover" },
-  { src: "/images/home/Cover Design Kingdom Living.jpg", alt: "Kingdom Living" },
-  { src: "/images/home/Cover.jpg", alt: "Cover" },
-  { src: "/images/home/Cover02.jpg", alt: "Cover" },
-  { src: "/images/home/IN THE STREETS OF 02.jpg", alt: "In the Streets" },
+  { src: "/images/home/Cover.jpg", alt: "Ring the Bells That Still Can Ring" },
+  { src: "/images/home/Cover02.jpg", alt: "PooPoo Fairy" },
+  { src: "/images/home/IN THE STREETS OF 02.jpg", alt: "In the Streets of the Alleyways" },
 ] as const;
 
 const regular =
