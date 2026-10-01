@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const categories = [
   { label: "Non Fiction", icon: "/images/home/imgNonFictionIcon.svg", href: "#hire" },
   { label: "Fiction", icon: "/images/home/imgNonFictionIcon1.svg", href: "/fiction-writing" },
-  { label: "History", icon: "/images/home/imgNonFictionIcon2.svg", href: "#hire" },
+  { label: "Children's", icon: "/images/home/children.svg", href: "#hire" },
   { label: "Poetry", icon: "/images/home/imgNonFictionIcon3.svg", href: "#hire" },
   { label: "Thriller", icon: "/images/home/imgNonFictionIcon4.svg", href: "#hire" },
   { label: "Memoir", icon: "/images/home/imgNonFictionIcon5.svg", href: "#hire" },
