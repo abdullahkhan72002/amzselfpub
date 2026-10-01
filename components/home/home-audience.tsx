@@ -12,6 +12,12 @@ const books = [
   { src: "/images/carousel/book-5.png", alt: "Simple Way Of Piece Life" },
   { src: "/images/carousel/book-16.png", alt: "The Lady Beauty Scarlett" },
   { src: "/images/carousel/book-4.png", alt: "Once Upon A Time" },
+  { src: "/images/home/Bullfrog C3 R1.jpg", alt: "Bullfrog" },
+  { src: "/images/home/Cover 02 R2.jpg", alt: "Cover" },
+  { src: "/images/home/Cover Design Kingdom Living.jpg", alt: "Kingdom Living" },
+  { src: "/images/home/Cover.jpg", alt: "Cover" },
+  { src: "/images/home/Cover02.jpg", alt: "Cover" },
+  { src: "/images/home/IN THE STREETS OF 02.jpg", alt: "In the Streets" },
 ] as const;
 
 const regular =
@@ -76,6 +82,10 @@ function BookTrack({
 export function HomeAudience() {
   const [active, setActive] = useState(0);
 
+  function step(delta: number) {
+    setActive((current) => (current + delta + books.length) % books.length);
+  }
+
   return (
     <section className="relative overflow-hidden" aria-roledescription="carousel" aria-label="Published books">
       <div className="pointer-events-none absolute top-0 left-[calc(50%-7px)] h-full w-[5960px] max-w-none -translate-x-1/2">
@@ -122,27 +132,29 @@ export function HomeAudience() {
           />
         </div>
 
-        <div className="mt-8 flex items-center justify-center gap-3.5 xl:mt-[59px]" role="tablist" aria-label="Book slides">
-          {books.map((book, index) => {
-            const selected = index === active;
-            return (
-              <button
-                key={book.src}
-                type="button"
-                role="tab"
-                aria-selected={selected}
-                aria-label={`Show ${book.alt}`}
-                onClick={() => setActive(index)}
-                className={
-                  selected
-                    ? "flex size-[29px] items-center justify-center rounded-full border border-brand bg-transparent"
-                    : "size-[9px] rounded-full border border-brand bg-white"
-                }
-              >
-                {selected ? <span className="size-[9px] rounded-full bg-brand" /> : null}
-              </button>
-            );
-          })}
+        <div className="mt-8 flex items-center justify-center gap-3.5 xl:mt-12">
+          <button
+            type="button"
+            aria-label="Previous book"
+            onClick={() => step(-1)}
+            className="flex size-12 items-center justify-center overflow-hidden rounded-full border border-solid border-white bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.05)] transition hover:bg-[#f1f2ee]"
+          >
+            <span className="flex size-6 -scale-y-100 rotate-180 items-center justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img alt="" src="/images/home/imgFrame.svg" className="block size-full max-w-none" />
+            </span>
+          </button>
+          <button
+            type="button"
+            aria-label="Next book"
+            onClick={() => step(1)}
+            className="flex size-12 items-center justify-center overflow-hidden rounded-full border border-solid border-brand bg-brand shadow-[0px_4px_4px_0px_rgba(0,0,0,0.05)] transition hover:brightness-95"
+          >
+            <span className="relative size-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img alt="" src="/images/home/imgFrame1.svg" className="absolute inset-0 block size-full max-w-none" />
+            </span>
+          </button>
         </div>
       </div>
     </section>
