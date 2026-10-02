@@ -19,12 +19,11 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 gap-10 border-b border-white pb-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 lg:pb-12">
           <div>
             <Image
-              src="/images/home/imgGroup1.svg"
+              src="/images/home/AMZ White.png"
               alt="AMZ Self Pub"
-              width={157}
-              height={96}
-              unoptimized
-              className="h-[73px] w-[119px]"
+              width={4930}
+              height={2942}
+              className="h-16 w-auto sm:h-20"
             />
             <p className="mt-5 max-w-[230px] font-sans text-[15px] leading-[22px]">
               Get An Idea. Get Published. Get Fame. Get Paid. Get Away And Explore.

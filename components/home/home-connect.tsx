@@ -31,9 +31,9 @@ export function HomeConnect() {
       <div className="mx-auto flex w-full max-w-[1140px] flex-col items-center gap-8 px-5 py-[60px] xl:flex-row xl:items-center xl:gap-0 xl:py-[88px]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          alt=""
-          src="/images/home/imgFrame2.svg"
-          className="h-auto w-[min(100%,200px)] shrink-0 xl:w-[240px]"
+          alt="AMZ Self Pub"
+          src="/images/home/AMZ favicon.png"
+          className="h-auto w-[min(100%,180px)] shrink-0 xl:w-[220px]"
         />
 
         <div className="relative hidden h-[200px] w-px shrink-0 xl:mx-12 xl:block" aria-hidden>

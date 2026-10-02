@@ -37,9 +37,15 @@ export function SiteHeader() {
       onMouseLeave={() => setServicesOpen(false)}
     >
       <div className="mx-auto flex w-full max-w-[1140px] items-center justify-between gap-4 px-5 py-3">
-        <Link href="/" className="flex shrink-0 flex-col items-center gap-1.5" onClick={closeAll} aria-label="AMZ Self Pub home">
-          <Image src="/images/home/imgGroup.svg" alt="" width={131} height={80} className="h-11 w-auto" unoptimized priority />
-          <Image src="/images/home/imgGroup2.svg" alt="AMZ Self Pub" width={172} height={32} className="h-[17px] w-auto" unoptimized priority />
+        <Link href="/" className="shrink-0" onClick={closeAll} aria-label="AMZ Self Pub home">
+          <Image
+            src="/images/home/AMZ.png"
+            alt="AMZ Self Pub"
+            width={4930}
+            height={2942}
+            className="h-14 w-auto sm:h-16"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-4 font-inter text-[13px] font-medium tracking-[1.6px] text-black lg:flex xl:text-sm">
