@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { ConsultButton } from "@/components/consultation";
 import { services } from "@/lib/services";
 
 const links = [
@@ -74,12 +75,9 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <Link
-          href="/contact-us"
-          className="hidden h-11 min-w-[150px] items-center justify-center rounded-[10px] bg-brand px-6 text-base font-medium text-white transition hover:bg-[#e8851a] lg:inline-flex"
-        >
+        <ConsultButton className="hidden h-11 min-w-[150px] items-center justify-center rounded-[10px] bg-brand px-6 text-base font-medium text-white transition hover:bg-[#e8851a] lg:inline-flex">
           Get Started
-        </Link>
+        </ConsultButton>
 
         <button
           type="button"
@@ -183,13 +181,12 @@ export function SiteHeader() {
               );
             })}
           </ul>
-          <Link
-            href="/contact-us"
+          <ConsultButton
             className="mt-4 inline-flex rounded-[10px] bg-brand px-6 py-3 text-base font-medium text-white"
             onClick={closeAll}
           >
             Get Started
-          </Link>
+          </ConsultButton>
         </nav>
       ) : null}
     </header>

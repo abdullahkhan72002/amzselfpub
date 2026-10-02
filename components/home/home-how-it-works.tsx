@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Image from "next/image";
+import { ConsultButton } from "@/components/consultation";
 import { CallButton } from "@/components/hero-actions";
 
 const steps = [
@@ -61,13 +62,10 @@ export function HomeHowItWorks() {
         </ul>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row xl:mt-10 xl:gap-6">
-          <a
-            href="/contact-us"
-            className="inline-flex h-12 items-center justify-center gap-1.5 rounded-[16px] bg-brand px-6 font-sans text-base font-medium text-white transition hover:bg-[#e88712] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-          >
+          <ConsultButton className="inline-flex h-12 items-center justify-center gap-1.5 rounded-[16px] bg-brand px-6 font-sans text-base font-medium text-white transition hover:bg-[#e88712] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
             <img alt="" src="/images/home/imgVector5.svg" className="h-[22px] w-[21px] shrink-0" />
             Get Free Consultation
-          </a>
+          </ConsultButton>
           <CallButton />
         </div>
       </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ConsultButton } from "@/components/consultation";
 import { PHONE_NUMBER, PHONE_TEL } from "@/components/hero-actions";
 
 const icons = ["/images/icon-handshake.svg", "/images/icon-screen.svg", "/images/icon-star.svg"];
@@ -52,9 +53,9 @@ export function HowItWorks({
           ))}
         </ul>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="/contact-us" className="inline-flex items-center gap-2 rounded-full bg-teal px-6 py-3 font-medium text-white">
+          <ConsultButton className="inline-flex items-center gap-2 rounded-full bg-teal px-6 py-3 font-medium text-white">
             Get Free Consultation
-          </a>
+          </ConsultButton>
           <a href={`tel:${PHONE_TEL}`} className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-navy">
             {PHONE_NUMBER}
           </a>

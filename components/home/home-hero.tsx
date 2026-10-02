@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { FormEvent, useState } from "react";
-import { CallButton } from "@/components/hero-actions";
-import { submitLead } from "@/lib/submit-lead";
+import { HeroActions } from "@/components/hero-actions";
+import { HeroLeadForm } from "@/components/hero-lead-form";
 
 const cards = [
   {
@@ -77,90 +76,6 @@ function FloatingBook({
   );
 }
 
-function HeroLeadForm() {
-  const [sent, setSent] = useState(false);
-  const [error, setError] = useState("");
-  const [pending, setPending] = useState(false);
-
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const form = event.currentTarget;
-    setError("");
-    setSent(false);
-    setPending(true);
-    try {
-      await submitLead(form, "Hire A Book Publisher");
-      form.reset();
-      setSent(true);
-    } catch {
-      setError("We could not send that just now. Please email info@amzselfpub.com.");
-    } finally {
-      setPending(false);
-    }
-  }
-
-  const fieldClass =
-    "w-full rounded-xl border border-black/10 bg-white px-4 font-sans text-[15px] font-light text-ink outline-none placeholder:font-light placeholder:text-placeholder focus:border-brand sm:px-5 sm:text-base";
-
-  return (
-    <form
-      id="hire"
-      onSubmit={onSubmit}
-      className="flex w-full flex-col rounded-[30px] bg-[#ffe6c9] px-6 py-8 sm:px-8 lg:rounded-[46px] lg:px-8 lg:py-10"
-    >
-      <h2 className="text-center font-heading text-[30px] font-bold leading-[1.2] text-ink sm:text-[32px] xl:text-[40px]">
-        Hire A Book Publisher
-      </h2>
-      <p className="mt-2 text-center font-sans text-[15px] leading-relaxed text-black xl:text-base">
-        Discuss your project with our publishing expert
-      </p>
-
-      <div className="mt-6 flex flex-col gap-3.5">
-        <label className="sr-only" htmlFor="hire-name">
-          Name
-        </label>
-        <input id="hire-name" name="name" required placeholder="Name" autoComplete="name" className={`h-[50px] ${fieldClass}`} />
-        <label className="sr-only" htmlFor="hire-phone">
-          Phone Number
-        </label>
-        <input id="hire-phone" name="phone" type="tel" required placeholder="Phone Number" autoComplete="tel" className={`h-[50px] ${fieldClass}`} />
-        <label className="sr-only" htmlFor="hire-email">
-          Email Address
-        </label>
-        <input id="hire-email" name="email" type="email" required placeholder="Email Address" autoComplete="email" className={`h-[50px] ${fieldClass}`} />
-        <label className="sr-only" htmlFor="hire-message">
-          Write A Message
-        </label>
-        <textarea
-          id="hire-message"
-          name="message"
-          required
-          placeholder="Write A Message"
-          className={`h-[120px] py-3.5 ${fieldClass}`}
-        />
-      </div>
-
-      <button
-        type="submit"
-        disabled={pending}
-        className="mx-auto mt-8 flex h-12 w-full max-w-[176px] items-center justify-center rounded-[10px] bg-brand px-7 font-sans text-base font-medium text-white transition hover:bg-[#e58612] disabled:opacity-70"
-      >
-        {pending ? "Sending..." : "Submit"}
-      </button>
-      {error ? (
-        <p className="mt-4 text-center font-sans text-sm text-red-700" role="alert">
-          {error}
-        </p>
-      ) : null}
-      {sent ? (
-        <p className="mt-4 text-center font-sans text-sm text-ink" role="status">
-          Thanks. A publishing expert will be in touch.
-        </p>
-      ) : null}
-    </form>
-  );
-}
-
 export function HomeHero() {
   return (
     <section className="relative overflow-hidden bg-white">
@@ -190,7 +105,7 @@ export function HomeHero() {
             <p className="mt-4 max-w-[510px] font-sans text-base leading-relaxed text-black xl:mt-5">
               {`If you do not know where to begin, just relax. We take all the stress of writing, publishing, and promoting your book off your shoulders. `}
             </p>
-            <CallButton className="mt-6" />
+            <HeroActions className="mt-6" />
             <ul className="mt-8 flex flex-wrap items-end gap-4 xl:gap-x-4">
               {badges.map((badge) => (
                 <li key={badge.src}>

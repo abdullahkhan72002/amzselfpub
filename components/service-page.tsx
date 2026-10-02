@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Faq } from "@/components/faq";
-import { CallButton, HeroActions } from "@/components/hero-actions";
+import { CallButton } from "@/components/hero-actions";
+import { SplitHero } from "@/components/split-hero";
 import { HowItWorks } from "@/components/how-it-works";
 import { ServiceConnect } from "@/components/service-connect";
 import { WhyChoose } from "@/components/why-choose";
@@ -110,13 +111,6 @@ const servicePhotos: Record<string, { primary: string; consult: string; width: n
   },
 };
 
-const fadedCovers = [
-  { src: "/images/book-16.png", className: "right-[18%] top-6 w-40 rotate-6 opacity-30" },
-  { src: "/images/book-5.png", className: "right-[2%] top-16 w-44 -rotate-3 opacity-25" },
-  { src: "/images/book-3.png", className: "right-[28%] bottom-0 w-36 rotate-2 opacity-20" },
-  { src: "/images/hero-book.png", className: "right-[8%] bottom-4 hidden w-36 opacity-20 lg:block" },
-];
-
 export function serviceMetadata(service: ServiceContent): Metadata {
   return {
     title: `${service.nav} | AMZ Self Pub`,
@@ -134,31 +128,16 @@ export function ServicePageView({ service }: { service: ServiceContent }) {
 
   return (
     <main className="overflow-x-clip">
-      <section className="relative overflow-hidden bg-[linear-gradient(180deg,#ffffff_0%,#fff8f0_100%)]">
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-[48%]">
-          {fadedCovers.map((book) => (
-            <Image
-              key={book.className}
-              src={book.src}
-              alt=""
-              width={220}
-              height={320}
-              className={`absolute h-auto ${book.className}`}
-            />
-          ))}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/75 to-white/20" />
-        </div>
-        <div className="relative mx-auto max-w-4xl px-5 py-20 text-center sm:px-8 lg:py-28">
-          <h1 className="font-heading text-4xl leading-[1.15] sm:text-6xl">
-            <span className="text-teal">{service.accent}</span>{" "}
-            <span className="text-navy">{service.headline}</span>
-          </h1>
-          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#4d5560] sm:text-lg">
-            {service.intro}
-          </p>
-          <HeroActions align="center" />
-        </div>
-      </section>
+      <SplitHero
+        title={
+          <>
+            <span className="text-brand">{service.accent}</span> <span>{service.headline}</span>
+          </>
+        }
+        text={service.intro}
+        formId={`hire-${service.slug}`}
+        formSource={`${service.nav} hero`}
+      />
 
       <section className="bg-[linear-gradient(90deg,#fff1e0_0%,#f7f9fb_46%,#ffffff_100%)]">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:py-20">

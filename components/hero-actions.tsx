@@ -1,8 +1,7 @@
-import Link from "next/link";
+import { ConsultButton } from "@/components/consultation";
+import { PHONE_NUMBER, PHONE_TEL } from "@/lib/contact";
 
-export const PHONE_NUMBER = "(202) 555-0147";
-export const PHONE_TEL = "+12025550147";
-export const CONTACT_EMAIL = "info@amzselfpub.com";
+export { CONTACT_EMAIL, PHONE_NUMBER, PHONE_TEL } from "@/lib/contact";
 
 export function CallButton({
   tone = "brand",
@@ -25,21 +24,13 @@ export function CallButton({
   );
 }
 
-export function HeroActions({ align = "start" }: { align?: "start" | "center" }) {
+export function HeroActions({ align = "start", className = "mt-8" }: { align?: "start" | "center"; className?: string }) {
   return (
-    <div className={`mt-8 flex flex-wrap items-center gap-3 ${align === "center" ? "justify-center" : "justify-start"}`}>
-      <Link
-        href="/contact-us"
-        className="inline-flex rounded-xl bg-teal px-5 py-3 text-base font-medium text-white transition hover:bg-[#e58612]"
-      >
+    <div className={`inline-flex flex-wrap items-center gap-3 ${align === "center" ? "justify-center" : "justify-start"} ${className}`}>
+      <ConsultButton className="inline-flex h-12 items-center justify-center rounded-[16px] bg-brand px-6 font-sans text-base font-medium text-white transition hover:bg-[#e58612]">
         Get Free Consultation
-      </Link>
-      <a
-        href={`tel:${PHONE_TEL}`}
-        className="inline-flex rounded-xl border border-navy bg-white px-5 py-3 text-base font-medium text-navy"
-      >
-        {PHONE_NUMBER}
-      </a>
+      </ConsultButton>
+      <CallButton />
     </div>
   );
 }

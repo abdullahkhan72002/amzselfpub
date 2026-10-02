@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Arima, Inter, Plus_Jakarta_Sans, Poppins, Tinos } from "next/font/google";
+import { ConsultationProvider } from "@/components/consultation";
 import { PpcCapture } from "@/components/ppc-capture";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -56,10 +57,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {/* End of brandwebsite-f Zendesk Widget script */}
       </head>
       <body className="min-h-full max-w-full overflow-x-clip bg-white antialiased">
-        <PpcCapture />
-        <SiteHeader />
-        <div className="max-w-full overflow-x-clip">{children}</div>
-        <SiteFooter />
+        <ConsultationProvider>
+          <PpcCapture />
+          <SiteHeader />
+          <div className="max-w-full overflow-x-clip">{children}</div>
+          <SiteFooter />
+        </ConsultationProvider>
       </body>
     </html>
   );
