@@ -70,8 +70,8 @@ export default function TermsPage() {
         <h2 className="font-heading text-2xl text-navy">How to ask</h2>
         <p className="mt-3">
           Send the request through the contact page or call{" "}
-          <a href="tel:4564812546664" className="text-teal">
-            4564812546664
+          <a href="tel:+12025550147" className="text-teal">
+            (202) 555-0147
           </a>{" "}
           or email{" "}
           <a href="mailto:info@amzselfpub.com" className="text-teal">

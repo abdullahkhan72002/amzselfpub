@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { CallButton } from "@/components/hero-actions";
 import { PageBanner } from "@/components/page-banner";
 import { Ghostwriting } from "@/components/ghostwriting";
 
@@ -28,6 +29,7 @@ export default function AboutUsPage() {
               AMZSelfpub offers a complete publishing experience, supporting writers through
               editing, publishing, and promotion with expert guidance and dedicated support.
             </p>
+            <CallButton className="mt-2" />
           </div>
           <div className="relative">
             <div className="absolute right-0 bottom-6 h-[72%] w-[72%] rounded-[48%_42%_46%_18%] bg-teal" />

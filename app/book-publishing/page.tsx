@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Faq } from "@/components/faq";
-import { HeroActions } from "@/components/hero-actions";
+import { CallButton, HeroActions } from "@/components/hero-actions";
 import { ServiceConnect } from "@/components/service-connect";
 
 export const metadata: Metadata = {
@@ -92,6 +92,7 @@ export default function BookPublishingPage() {
               services cover editing, design, printing, and distribution, while you keep ownership
               of the work.
             </p>
+            <CallButton className="mt-6" />
           </div>
           <Image
             src="/images/journey-books.jpg"

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CONTACT_EMAIL } from "@/components/hero-actions";
+import { CONTACT_EMAIL, PHONE_NUMBER, PHONE_TEL } from "@/components/hero-actions";
 import { LeadForm } from "@/components/lead-form";
 import { PageBanner } from "@/components/page-banner";
 
@@ -22,8 +22,8 @@ export default function ContactUsPage() {
           <address className="not-italic">
             <h2 className="font-sans text-sm font-bold text-teal">Contact</h2>
             <p className="mt-4">
-              <a href="tel:4564812546664" className="text-navy">
-                4564812546664
+              <a href={`tel:${PHONE_TEL}`} className="text-navy">
+                {PHONE_NUMBER}
               </a>
             </p>
             <p className="mt-3">

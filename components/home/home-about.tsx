@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CallButton } from "@/components/hero-actions";
 
 const features = ["Manuscript review", "Editing", "Cover and layout", "Publishing setup"];
 
@@ -44,6 +45,7 @@ export function HomeAbout() {
               <FeatureItem key={label} label={label} />
             ))}
           </ul>
+          <CallButton tone="onDark" className="mt-8" />
         </div>
 
         <div className="relative mx-auto w-full max-w-[420px] lg:max-w-[460px]">

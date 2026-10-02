@@ -105,8 +105,8 @@ export default function ReturnRefundPage() {
             contact page
           </Link>{" "}
           or call{" "}
-          <a href="tel:4564812546664" className="text-teal">
-            4564812546664
+          <a href="tel:+12025550147" className="text-teal">
+            (202) 555-0147
           </a>{" "}
           or email{" "}
           <a href="mailto:info@amzselfpub.com" className="text-teal">

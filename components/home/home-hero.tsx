@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { FormEvent, useState } from "react";
+import { CallButton } from "@/components/hero-actions";
 import { submitLead } from "@/lib/submit-lead";
 
 const cards = [
@@ -189,6 +190,7 @@ export function HomeHero() {
             <p className="mt-4 max-w-[510px] font-sans text-base leading-relaxed text-black xl:mt-5">
               {`If you do not know where to begin, just relax. We take all the stress of writing, publishing, and promoting your book off your shoulders. `}
             </p>
+            <CallButton className="mt-6" />
             <ul className="mt-8 flex flex-wrap items-end gap-4 xl:gap-x-4">
               {badges.map((badge) => (
                 <li key={badge.src}>

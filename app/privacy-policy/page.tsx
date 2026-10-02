@@ -107,8 +107,8 @@ export default function PrivacyPage() {
         <h2 className="font-heading text-2xl text-navy">Contact</h2>
         <p className="mt-3">
           Questions about this policy can be sent through the contact page. Phone{" "}
-          <a href="tel:4564812546664" className="text-teal">
-            4564812546664
+          <a href="tel:+12025550147" className="text-teal">
+            (202) 555-0147
           </a>
           . Email{" "}
           <a href="mailto:info@amzselfpub.com" className="text-teal">

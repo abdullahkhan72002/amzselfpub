@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CONTACT_EMAIL } from "@/components/hero-actions";
+import { CONTACT_EMAIL, PHONE_NUMBER, PHONE_TEL } from "@/components/hero-actions";
 
 const menu = [
   { href: "/", label: "Home" },
@@ -10,7 +10,7 @@ const menu = [
   { href: "/contact-us", label: "Contact Us" },
 ];
 
-const phone = "4564812546664";
+const phone = PHONE_NUMBER;
 
 export function SiteFooter() {
   return (
@@ -47,7 +47,7 @@ export function SiteFooter() {
             <h2 className="font-sans text-lg font-bold text-brand">Contact</h2>
             <address className="mt-3 space-y-3 font-sans text-[15px] leading-[22px] not-italic">
               <p>
-                <a href={`tel:${phone}`} className="transition-colors hover:text-brand">
+                <a href={`tel:${PHONE_TEL}`} className="transition-colors hover:text-brand">
                   {phone}
                 </a>
               </p>

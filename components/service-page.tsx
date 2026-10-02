@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Faq } from "@/components/faq";
-import { HeroActions } from "@/components/hero-actions";
+import { CallButton, HeroActions } from "@/components/hero-actions";
 import { HowItWorks } from "@/components/how-it-works";
 import { ServiceConnect } from "@/components/service-connect";
 import { WhyChoose } from "@/components/why-choose";
@@ -167,6 +167,7 @@ export function ServicePageView({ service }: { service: ServiceContent }) {
               {service.journeyTitle}
             </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-[#5c6570]">{service.journey}</p>
+            <CallButton className="mt-6" />
           </div>
           <Image
             src={photo?.primary ?? "/images/journey-books.jpg"}
