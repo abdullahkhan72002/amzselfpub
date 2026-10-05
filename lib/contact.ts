@@ -1,3 +1,3 @@
-export const PHONE_NUMBER = "(202) 555-0147";
-export const PHONE_TEL = "+12025550147";
+export const PHONE_NUMBER = "(424) 286-8260";
+export const PHONE_TEL = "+14242868260";
 export const CONTACT_EMAIL = "info@amzselfpub.com";
