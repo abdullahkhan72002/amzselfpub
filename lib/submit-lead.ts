@@ -15,4 +15,6 @@ export async function submitLead(form: HTMLFormElement, formName: string) {
   if (!response.ok) {
     throw new Error("Could not send your message.");
   }
+
+  window.location.assign("/thank-you");
 }
