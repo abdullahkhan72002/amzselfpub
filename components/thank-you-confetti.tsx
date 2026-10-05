@@ -20,10 +20,12 @@ export function ThankYouConfetti() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const context = canvas.getContext("2d");
-    if (!context) return;
+    const canvasEl = canvasRef.current;
+    if (!canvasEl) return;
+    const drawing = canvasEl.getContext("2d");
+    if (!drawing) return;
+    const canvas: HTMLCanvasElement = canvasEl;
+    const context: CanvasRenderingContext2D = drawing;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     let pieces: Piece[] = [];
