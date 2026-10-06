@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
-import { Arima, Inter, Plus_Jakarta_Sans, Poppins, Tinos } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans, Poppins, Tinos } from "next/font/google";
 import { ConsultationProvider } from "@/components/consultation";
 import { PpcCapture } from "@/components/ppc-capture";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { ZendeskBehavior } from "@/components/zendesk-behavior";
 import "./globals.css";
-
-const arima = Arima({
-  subsets: ["latin"],
-  variable: "--font-arima",
-  display: "swap",
-});
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -48,7 +42,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${arima.variable} ${poppins.variable} ${tinos.variable} ${jakarta.variable} ${inter.variable}`}>
+    <html lang="en" className={`${poppins.variable} ${tinos.variable} ${jakarta.variable} ${inter.variable}`}>
       <head>
         {/* Google Tag Manager */}
         <script

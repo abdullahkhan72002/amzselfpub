@@ -2,7 +2,7 @@
 
 @theme inline {
   --font-sans: var(--font-poppins);
-  --font-heading: var(--font-arima);
+  --font-heading: var(--ff-tinos);
   --font-tinos: var(--ff-tinos);
   --font-jakarta: var(--ff-jakarta);
   --font-inter: var(--ff-inter);
@@ -35,8 +35,11 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 .font-heading {
-  font-family: var(--font-arima), serif;
+  font-family: var(--ff-tinos), Georgia, "Times New Roman", serif;
 }
 
 .marquee-track {

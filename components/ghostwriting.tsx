@@ -43,7 +43,7 @@ export function Ghostwriting() {
                 </svg>
               </span>
               <div>
-                <h3 className="font-sans text-lg font-semibold text-ink">{feature.title}</h3>
+                <h3 className="font-heading text-lg font-semibold text-ink">{feature.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#66707a]">{feature.body}</p>
               </div>
             </li>

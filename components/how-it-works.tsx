@@ -47,7 +47,7 @@ export function HowItWorks({
                 </span>
                 <span className="text-sm font-medium text-[#8b8b8b]">{String(index + 1).padStart(2, "0")}</span>
               </div>
-              <h3 className="mt-8 font-sans text-xl font-semibold">{step.title}</h3>
+              <h3 className="mt-8 font-heading text-xl font-semibold">{step.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-[#6c6c6c]">{step.body}</p>
             </li>
           ))}

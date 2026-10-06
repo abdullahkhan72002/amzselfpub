@@ -20,7 +20,7 @@ export default function ContactUsPage() {
         <div className="mx-auto grid max-w-6xl gap-12 px-5 pb-20 sm:px-8 lg:grid-cols-[1fr_0.8fr]">
           <LeadForm id="hire" title="Hire A Book Publisher" align="left" />
           <address className="not-italic">
-            <h2 className="font-sans text-sm font-bold text-teal">Contact</h2>
+            <h2 className="font-heading text-sm font-bold text-teal">Contact</h2>
             <p className="mt-4">
               <a href={`tel:${PHONE_TEL}`} className="text-navy">
                 {PHONE_NUMBER}

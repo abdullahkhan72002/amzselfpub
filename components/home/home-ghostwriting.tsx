@@ -67,7 +67,7 @@ function FeatureCopy({
 }) {
   return (
     <div className={`min-w-0 ${className}`}>
-      <h3 className="font-sans text-lg font-semibold leading-[1.3] text-[rgba(0,0,0,0.7)] xl:text-[20px]">
+      <h3 className="font-heading text-lg font-semibold leading-[1.3] text-[rgba(0,0,0,0.7)] xl:text-[20px]">
         {title}
       </h3>
       <p className="mt-2 font-sans text-[15px] font-medium leading-[1.6] text-[rgba(0,0,0,0.7)] xl:text-base">

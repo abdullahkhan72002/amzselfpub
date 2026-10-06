@@ -99,7 +99,7 @@ export function HomeWhyChoose() {
                   {feature.n}
                 </span>
               </div>
-              <h3 className="mt-6 font-sans text-[20px] leading-[1.3] font-semibold text-black xl:mt-7 xl:text-[22px]">
+              <h3 className="mt-6 font-heading text-[20px] leading-[1.3] font-semibold text-black xl:mt-7 xl:text-[22px]">
                 {feature.title}
               </h3>
               <p className={`mt-3 text-[15px] leading-[1.6] font-normal text-[#8a8a8a] xl:text-base ${feature.bodyClass}`}>

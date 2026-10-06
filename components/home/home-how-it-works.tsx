@@ -55,7 +55,7 @@ export function HomeHowItWorks() {
                 </div>
                 <span className="font-inter text-base font-medium leading-[1.3] text-black">{step.n}</span>
               </div>
-              <h3 className="mt-6 font-sans text-[20px] font-medium leading-[1.3] text-black">{step.title}</h3>
+              <h3 className="mt-6 font-heading text-[20px] font-medium leading-[1.3] text-black">{step.title}</h3>
               <p className="mt-3 font-sans text-[15px] font-normal leading-[1.6] text-[#6c6c6c]">{step.body}</p>
             </li>
           ))}

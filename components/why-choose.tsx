@@ -56,7 +56,7 @@ export function WhyChoose() {
               <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-white font-heading text-xl text-teal shadow-[0_10px_24px_rgba(0,0,0,0.08)]">
                 {point.number}
               </span>
-              <h3 className="mt-5 font-sans text-2xl font-semibold text-ink">{point.title}</h3>
+              <h3 className="mt-5 font-heading text-2xl font-semibold text-ink">{point.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-[#66707a]">{point.body}</p>
             </li>
           ))}

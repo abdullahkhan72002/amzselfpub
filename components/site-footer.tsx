@@ -31,7 +31,7 @@ export function SiteFooter() {
           </div>
 
           <nav aria-label="Footer">
-            <h2 className="font-sans text-lg font-bold text-brand">Menu</h2>
+            <h2 className="font-heading text-lg font-bold text-brand">Menu</h2>
             <ul className="mt-3 space-y-3 font-sans text-[15px] leading-[22px]">
               {menu.map((item) => (
                 <li key={item.href}>
@@ -44,7 +44,7 @@ export function SiteFooter() {
           </nav>
 
           <div>
-            <h2 className="font-sans text-lg font-bold text-brand">Contact</h2>
+            <h2 className="font-heading text-lg font-bold text-brand">Contact</h2>
             <address className="mt-3 space-y-3 font-sans text-[15px] leading-[22px] not-italic">
               <p>
                 <a href={`tel:${PHONE_TEL}`} className="transition-colors hover:text-brand">
