@@ -4,6 +4,7 @@ import { ConsultationProvider } from "@/components/consultation";
 import { PpcCapture } from "@/components/ppc-capture";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { ZendeskBehavior } from "@/components/zendesk-behavior";
 import "./globals.css";
 
 const arima = Arima({
@@ -78,6 +79,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         {/* End Google Tag Manager (noscript) */}
+        <ZendeskBehavior />
         <ConsultationProvider>
           <PpcCapture />
           <SiteHeader />
