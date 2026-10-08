@@ -49,7 +49,7 @@ export default function BookPublishingPage() {
       <SplitHero
         title={
           <>
-            <span className="text-brand">Best</span> <span>Book Publishing in USA</span>
+            <span className="text-brand">Best</span> <span>Book Publishing Service in USA</span>
           </>
         }
         text="AMZ Self Pub edits, designs, and prepares your book for release. You approve each file, and the finished book stays in your name."
