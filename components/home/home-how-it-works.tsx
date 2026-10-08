@@ -7,20 +7,20 @@ import { CallButton } from "@/components/hero-actions";
 const steps = [
   {
     n: "01",
-    title: "Tell us about the book",
-    body: "Share the genre, the audience, and whether you have a finished manuscript, a partial draft, or only an outline.",
+    title: "Tell Us About Your Book",
+    body: "Share the genre, your target audience, and what you have so far: a finished manuscript, a partial draft, or a working outline. There is no minimum requirement to get started.",
     icon: "/images/home/imgHandshakeFill0Wght200Grad0Opsz241.svg",
   },
   {
     n: "02",
-    title: "Agree the scope",
-    body: "We confirm which stages you need: editing, cover, formatting, publishing setup, print, or promotion, and the fee for each.",
+    title: "Agree on the Scope",
+    body: "We confirm which stages your book needs: editing, cover design, formatting, publishing setup, print production, or promotional content, and provide the fee for each in writing before any work begins.",
     icon: "/images/home/imgFitScreenFill0Wght200Grad0Opsz241.svg",
   },
   {
     n: "03",
-    title: "Approve, then release",
-    body: "You review the files. After you sign off, we upload the listing or send the print-ready package to production.",
+    title: "Approve, Then Publish",
+    body: "You review every deliverable before it moves forward. Once you approve the edited text, the cover design, and the interior files, we upload your listing or send the print-ready package to production.",
     icon: "/images/home/imgStarFill0Wght200Grad0Opsz2411.svg",
   },
 ] as const;
@@ -43,7 +43,7 @@ export function HomeHowItWorks() {
           How It Works
         </h2>
         <p className="mx-auto mt-3 max-w-[920px] text-center font-sans text-[15px] font-medium leading-[1.65] text-[rgba(255,255,255,0.7)] xl:text-base">
-          A book moves through a short sequence: a conversation, a written scope, and files you approve before they go live or to press.
+          Getting published is a short, structured process. Here is how a project moves from your first message to a finished, listed book.
         </p>
 
         <ul className="mx-auto mt-8 grid w-full grid-cols-1 items-stretch gap-4 md:grid-cols-3 xl:mt-10">

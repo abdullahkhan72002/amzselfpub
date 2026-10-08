@@ -49,9 +49,7 @@ export function HomeConnect() {
           <h2 className="font-tinos text-[32px] leading-[1.2] font-normal tracking-[-1px] text-black xl:text-[40px]">
             <span>Connect With </span>
             <span className="font-bold text-brand">Leading</span>
-            <span> Book </span>
-            <br />
-            <span>Publishers in USA Today</span>
+            <span> Self-Publishing Company in USA</span>
           </h2>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:gap-5">

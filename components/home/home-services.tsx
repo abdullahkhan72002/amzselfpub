@@ -125,8 +125,8 @@ export function HomeServices() {
           </div>
         </div>
 
-        <p className="mx-auto mt-4 max-w-[720px] text-center font-sans text-base leading-[1.65] font-medium text-[rgba(0,0,0,0.7)]">
-          AMZSelfpub offers a complete, author-focused publishing experience, supporting writers through manuscript development, editing, publishing, and promotion with expert guidance and dedicated support.
+        <p className="mx-auto mt-4 max-w-[860px] text-center font-sans text-base leading-[1.65] font-medium text-[rgba(0,0,0,0.7)]">
+          From the first editorial pass to the final publishing setup, AMZ SelfPub offers everything an independent author needs to release a professional, market-ready book. Our team of editors, designers, and publishing specialists supports writers at every stage, so you can focus on your story while we handle the rest.
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-x-6 md:gap-y-8">

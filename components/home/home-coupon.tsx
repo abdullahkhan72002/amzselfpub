@@ -53,7 +53,7 @@ export function HomeCoupon() {
             Request a Free Consultation
           </h2>
           <p className="mt-3 text-left font-sans text-[15px] leading-[1.65] text-white xl:mt-4 xl:text-base">
-            Tell us the genre, the draft you have, and whether you need editing, design, or a full publishing setup.
+            Tell us the genre, where your manuscript stands right now, and which services you need. A member of our team will follow up to walk you through the scope and pricing for your specific project.
           </p>
 
           <div className="mt-5 flex flex-col gap-3.5 xl:mt-4">

@@ -14,26 +14,26 @@ const collage = {
 const features = [
   {
     n: "01",
-    title: "You keep the book",
-    body: "Copyright, retailer accounts, and royalties stay in your name. We prepare the files and the listing. We do not take ownership of the manuscript.",
+    title: "You Keep the Rights",
+    body: "Copyright, royalties, and retailer accounts remain in your name from start to finish. AMZ SelfPub prepares your files and publishing listing. We do not take a share of your earnings or claim any ownership of your manuscript, at any stage of the process.",
     bodyClass: "font-sans",
   },
   {
     n: "02",
-    title: "One team, one brief",
-    body: "Editing, cover design, formatting, and publishing setup are scoped in writing before that stage starts, so you are not hiring a new vendor for each file.",
+    title: "One Team, One Brief",
+    body: "Editing, cover design, interior formatting, and publishing setup are all handled in one place. The scope is confirmed in writing before each stage begins, so you are not chasing separate vendors or managing multiple contracts.",
     bodyClass: "font-sans",
   },
   {
     n: "03",
-    title: "Proof before print",
-    body: "You approve the edited text, the cover, and the interior before anything is uploaded or sent to press. Changes after that approval are a new stage.",
+    title: "With Your Approval",
+    body: "You review and approve the edited manuscript, the cover, and the formatted interior before anything is uploaded to Amazon, IngramSpark, or sent to a printer. If revisions are needed, we address them before the book goes live.",
     bodyClass: "font-inter",
   },
   {
     n: "04",
-    title: "Print and digital together",
-    body: "Paperback, ebook, and audiobook can be prepared from the same approved manuscript, each sized for the retailer or printer that will carry it.",
+    title: "Print and Digital from One Manuscript",
+    body: "Once your manuscript is approved, we can prepare a paperback, hardcover, ebook, and audiobook from the same source file, each formatted and sized for the retailer or printer that carries it. No need to start the process over for each format.",
     bodyClass: "font-inter",
   },
 ] as const;
@@ -54,10 +54,10 @@ export function HomeWhyChoose() {
       <div className="relative mx-auto grid w-full max-w-[1140px] items-start gap-12 px-5 py-[60px] xl:grid-cols-[472px_minmax(0,1fr)] xl:gap-x-[72px] xl:py-[96px]">
         <div className="min-w-0">
           <h2 className="font-tinos text-[32px] font-bold leading-[1.2] tracking-[0.4px] text-black xl:text-[42px]">
-            Why Choose Us
+            Why Choose AMZ SelfPub
           </h2>
           <p className="mt-3 max-w-[460px] font-inter text-[15px] font-normal leading-[1.65] text-[#8a8a8a] xl:text-base">
-            AMZ Self Pub is built for authors who want a finished book in their own name, with a clear scope for editing, design, and release.
+            AMZ SelfPub is built for authors who want a professionally produced book without giving up ownership, overpaying for bundled packages, or waiting weeks for a response. Here is what sets us apart.
           </p>
           <div className="mt-8 grid min-w-0 grid-cols-2 gap-2 xl:mt-10">
             <div className="flex min-w-0 flex-col gap-2">

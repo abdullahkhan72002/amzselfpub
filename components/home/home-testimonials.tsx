@@ -102,8 +102,11 @@ export function HomeTestimonials() {
     <section className="bg-white py-16 xl:py-24">
       <div className="mx-auto w-full max-w-[1140px] px-5">
         <h2 className="text-center font-tinos text-[32px] font-normal leading-[1.2] tracking-[-0.6px] text-black xl:text-[44px] xl:tracking-[-1px]">
-          Author Reviews
+          What Our Authors Say
         </h2>
+        <p className="mx-auto mt-4 max-w-[760px] text-center font-sans text-base leading-[1.65] text-[#5c6570]">
+          Authors across the United States have trusted AMZ SelfPub to bring their manuscripts to market. Read what they have to say about working with our editorial and publishing team.
+        </p>
         <ul className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:mt-14">
           {reviews.map((item) => (
             <li key={item.name}>

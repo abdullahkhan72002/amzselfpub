@@ -4,29 +4,29 @@ import { useState } from "react";
 
 const items = [
   {
-    question: "How do we start?",
+    question: "How do I get started?",
     answer:
-      "Send the genre, a short description, and the file you have now through the contact form. We reply with the stages that fit that book and the fee for each stage before any work begins.",
+      "Use the contact form to share your genre, a short description of your book, and whatever file or draft you have right now. We reply with a breakdown of the stages that apply to your project and the fee for each, before any work begins.",
   },
   {
-    question: "Do you edit a draft that already exists?",
+    question: "Can you edit a manuscript that's already written?",
     answer:
-      "Yes. Developmental editing looks at structure and pace. Line editing works on clarity and tone. Proofreading is the last pass on spelling and punctuation. You can hire one of those passes or all three.",
+      "Yes. We offer developmental editing for structure and pacing, line editing for clarity and tone, and proofreading for a final review of spelling and punctuation. You can commission one pass or all three, depending on where your manuscript is today.",
   },
   {
     question: "Do I keep the rights and royalties?",
     answer:
-      "You remain the author. Retailer accounts and royalties stay in your name. AMZ Self Pub does not claim copyright in your manuscript.",
+      "Yes, always. You remain the sole author and copyright holder throughout the entire process. Retailer accounts and royalties stay in your name. AMZ SelfPub does not take a cut of your earnings or claim any ownership of your work, at any point.",
   },
   {
-    question: "Can you help if the book is not finished?",
+    question: "What if my book isn't finished yet?",
     answer:
-      "Yes. Ghostwriting, fiction writing, and ebook writing can start from an outline or interviews. Publishing setup waits until you have approved the text.",
+      "That is not a problem. Our ghostwriting service can begin from an outline, a partial draft, or a series of recorded interviews. Publishing setup and distribution are added only after the manuscript has been approved and is ready to go.",
   },
   {
     question: "Which formats can you prepare?",
     answer:
-      "We prepare ebook, paperback, and hardcover files, and we can add audiobook narration or a print run when that stage is in the agreement.",
+      "We produce formatted files for ebook, paperback, and hardcover, each sized for the platform or printer carrying the book. Audiobook narration and print run coordination can also be added as separate stages when included in the project agreement.",
   },
 ];
 

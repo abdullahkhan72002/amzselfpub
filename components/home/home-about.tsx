@@ -35,11 +35,14 @@ export function HomeAbout() {
           <h2 className="mt-3 max-w-[520px] font-tinos text-[30px] font-bold leading-[1.2] text-white sm:text-[36px] lg:text-[42px]">
             A Streamlined Path to Self-Publishing
           </h2>
-          <p className="mt-4 max-w-[520px] font-sans text-base leading-[1.65] text-white/75">
-            AMZSelfPub provides a simple, flexible, and author-focused self-publishing experience tailored to your
-            goals. From manuscript development to publishing, distribution, and marketing, we support you throughout
-            the process while keeping your creative vision at the center of every step.
-          </p>
+          <div className="mt-4 max-w-[540px] space-y-4 font-sans text-base leading-[1.65] text-white/75">
+            <p>
+              AMZ SelfPub is an author-focused self-publishing company serving writers across the United States. We provide a complete range of publishing services, from manuscript development and professional editing to custom cover design, interior formatting, and distribution setup on Amazon KDP, IngramSpark, and major digital retailers.
+            </p>
+            <p>
+              There are no hidden fees, no confusing contracts, and no guesswork. Every stage is outlined and priced in writing before work begins, giving you full control and visibility over your publishing journey. Whether you are a first-time author or an experienced writer launching your next title, AMZ SelfPub makes the process clear, straightforward, and built around your goals.
+            </p>
+          </div>
           <ul className="mt-8 grid max-w-[520px] grid-cols-1 gap-4 min-[420px]:grid-cols-2">
             {features.map((label) => (
               <FeatureItem key={label} label={label} />

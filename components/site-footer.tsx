@@ -25,8 +25,8 @@ export function SiteFooter() {
               height={2942}
               className="h-16 w-auto sm:h-20"
             />
-            <p className="mt-5 max-w-[230px] font-sans text-[15px] leading-[22px]">
-              Get An Idea. Get Published. Get Fame. Get Paid. Get Away And Explore.
+            <p className="mt-5 max-w-[340px] font-sans text-[15px] leading-[22px]">
+              AMZ SelfPub is a US-based self-publishing company helping independent authors edit, design, format, and publish their books on Amazon and beyond, while keeping full rights and royalties in their name.
             </p>
           </div>
 

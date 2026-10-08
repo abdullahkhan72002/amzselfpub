@@ -108,7 +108,7 @@ export default function PrivacyPage() {
         <p className="mt-3">
           Questions about this policy can be sent through the contact page. Phone{" "}
           <a href="tel:+14242868260" className="text-teal">
-            (424) 286-8260
+            +1 (424) 286-8260
           </a>
           . Email{" "}
           <a href="mailto:info@amzselfpub.com" className="text-teal">

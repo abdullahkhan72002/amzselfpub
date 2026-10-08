@@ -3,28 +3,28 @@
 const features = [
   {
     title: "Skilled Storytellers at Your Service",
-    body: "Our seasoned ghostwriters are more than just writers they’re storytellers with a knack for bringing your ideas to life. Whether it’s fiction, nonfiction, or memoirs, they craft compelling narratives tailored to your voice and vision.",
+    body: "Our ghostwriters are experienced across fiction, nonfiction, memoir, and business writing. They work closely with you to capture your voice, understand your message, and produce a manuscript that reads exactly the way you want, without sounding like anyone else wrote it. The finished book is authentically yours, from the first page to the last.",
     icon: "/images/home/imgGroup1171275050.svg",
     accent: "/images/home/imgVector3.svg",
     accentClass: "top-[-16px] left-[108px]",
   },
   {
-    title: "Deep-Dive Research Expertise",
-    body: "Great books start with thorough research. Our team goes the extra mile to gather credible sources, understand your topic, and ensure your content is informative, accurate, and engaging for readers in any niche or genre.",
-    icon: "/images/home/imgGroup1171275048.svg",
-    accent: "/images/home/imgVector3.svg",
-    accentClass: "top-[-16px] left-[108px]",
-  },
-  {
     title: "Precision-Driven Quality Control",
-    body: "Every manuscript undergoes a meticulous quality assurance process led by experienced editors. From grammar to structure, we guarantee that your book meets the highest publishing standards before it reaches the shelves.",
+    body: "Every manuscript produced by our ghostwriting team moves through a structured editorial review before delivery. Senior editors check for consistency, clarity, structure, and tone throughout the draft. Grammar and formatting are verified at every pass, so what you receive is ready for the next stage of the publishing process.",
     icon: "/images/home/imgGroup1171275049.svg",
     accent: "/images/home/imgVector4.svg",
     accentClass: "top-[8px] left-[108px]",
   },
   {
+    title: "Deep-Dive Research Expertise",
+    body: "For nonfiction, business, and educational titles, strong research is the foundation of a credible book. Our team sources reliable references, verifies facts, and ensures your content reflects current, accurate information. Whether your subject is personal finance, health, history, or a specialized field, readers will find the depth they expect from a published authority.",
+    icon: "/images/home/imgGroup1171275048.svg",
+    accent: "/images/home/imgVector3.svg",
+    accentClass: "top-[-16px] left-[108px]",
+  },
+  {
     title: "Fast, Reliable Turnarounds",
-    body: "We understand deadlines matter. Our professional ghostwriters deliver on time—every time—without compromising on creativity or quality, ensuring your book is ready for fast-track publication.",
+    body: "We work to realistic, agreed-upon timelines, and we meet them. Every ghostwriting project begins with a delivery schedule outlined in writing, and our team communicates proactively if anything changes. You will always know where your manuscript stands and when to expect it.",
     icon: "/images/home/imgGroup1171275051.svg",
     accent: "/images/home/imgVector4.svg",
     accentClass: "top-[8px] left-[108px]",
@@ -78,7 +78,7 @@ function FeatureCopy({
 }
 
 export function HomeGhostwriting() {
-  const [storytellers, research, quality, turnarounds] = features;
+  const [storytellers, quality, research, turnarounds] = features;
 
   return (
     <section className="relative overflow-hidden">
@@ -101,8 +101,11 @@ export function HomeGhostwriting() {
         <h2 className="mx-auto text-center font-tinos text-[32px] font-bold leading-[1.2] tracking-[0.2px] text-black xl:text-[42px]">
           Looking for Professional <span className="text-brand">Ghostwriting</span>
           <br />
-          Services? Here’s What You Can Expect
+          Services? Here&apos;s What You Can Expect
         </h2>
+        <p className="mx-auto mt-4 max-w-[820px] text-center font-sans text-base leading-[1.65] text-[rgba(0,0,0,0.7)]">
+          If you have a book idea but not the time, or the words, to write it yourself, our professional ghostwriting team turns your vision into a compelling, publish-ready manuscript. Here is what every ghostwriting engagement includes.
+        </p>
 
         <div className="mx-auto mt-10 flex flex-col gap-10 xl:hidden">
           {features.map((feature) => (

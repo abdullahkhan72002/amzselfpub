@@ -102,8 +102,8 @@ export function HomeHero() {
               <span className="text-brand">Best</span>
               <span> Book Publishers for  Self-Publishing Success</span>
             </h1>
-            <p className="mt-4 max-w-[510px] font-sans text-base leading-relaxed text-black xl:mt-5">
-              {`If you do not know where to begin, just relax. We take all the stress of writing, publishing, and promoting your book off your shoulders. `}
+            <p className="mt-4 max-w-[540px] font-sans text-base leading-relaxed text-black xl:mt-5">
+              Publishing your book should not feel overwhelming. AMZ SelfPub handles the editing, cover design, formatting, and publishing setup, so your finished book reaches readers on Amazon and beyond, in your name and on your terms.
             </p>
             <HeroActions className="mt-6" />
             <ul className="mt-8 flex flex-wrap items-end gap-4 xl:gap-x-4">
