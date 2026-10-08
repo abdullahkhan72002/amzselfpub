@@ -131,7 +131,7 @@ export function ServicePageView({ service }: { service: ServiceContent }) {
       <SplitHero
         title={
           <>
-            <span className="text-brand">{service.accent}</span> <span>{service.headline}</span>
+            <span className="text-brand">Best</span> <span>{service.nav} in USA</span>
           </>
         }
         text={service.intro}
