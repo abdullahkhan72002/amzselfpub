@@ -5,7 +5,7 @@ import { PageBanner } from "@/components/page-banner";
 
 export const metadata: Metadata = {
   title: "Portfolio | AMZ Self Pub",
-  description: "A selection of books published with AMZ Self Pub.",
+  description: "Covers, interiors, and listings produced for independent authors who published in their own name.",
 };
 
 const books = [
@@ -31,9 +31,9 @@ export default function PortfolioPage() {
   return (
     <main>
       <PageBanner
-        eyebrow="Books"
-        title="Portfolio"
-        text="A look at covers and titles prepared for authors who wanted their work in readers' hands."
+        eyebrow="Our Work"
+        title="Books We've Helped Bring to Life"
+        text="Every cover, interior, and listing shown here was produced for an independent author who wanted a professionally published book in their own name. Browse the titles below to see the standard we hold across genres, formats, and publishing stages."
       />
       <section className="bg-white">
         <ul className="mx-auto max-w-6xl columns-1 gap-6 px-5 pb-20 sm:columns-2 sm:px-8 lg:columns-3">
